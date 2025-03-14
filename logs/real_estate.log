@@ -1,0 +1,30 @@
+2025-03-13 17:15:40,206 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:15:48,362 django.request WARNING  Not Found: /
+2025-03-13 17:15:48,567 django.request WARNING  Not Found: /favicon.ico
+2025-03-13 17:15:51,742 django.request WARNING  Not Found: /
+2025-03-13 17:24:49,316 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:25:55,006 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\models.py changed, reloading.
+2025-03-13 17:25:57,216 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:25:59,795 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\models.py changed, reloading.
+2025-03-13 17:26:01,986 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:26:10,406 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\models.py changed, reloading.
+2025-03-13 17:26:12,406 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:26:21,076 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\models.py changed, reloading.
+2025-03-13 17:26:23,486 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:30:02,015 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 17:30:10,085 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\models.py changed, reloading.
+2025-03-13 17:30:12,175 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:20:19,300 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:22:46,102 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\users\models.py changed, reloading.
+2025-03-13 21:22:47,970 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:24:00,637 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\core\settings\base.py changed, reloading.
+2025-03-13 21:24:02,242 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:24:09,089 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\core\settings\base.py changed, reloading.
+2025-03-13 21:24:10,617 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:24:17,078 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\core\settings\base.py changed, reloading.
+2025-03-13 21:25:15,582 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:29:11,390 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\users\admin.py changed, reloading.
+2025-03-13 21:29:12,961 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-13 21:35:35,442 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\core\urls.py changed, reloading.
+2025-03-13 21:35:36,909 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-14 10:18:02,864 django.utils.autoreload INFO     Watching for file changes with StatReloader
