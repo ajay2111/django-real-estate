@@ -1,0 +1,7 @@
+# SECURITY WARNING: keep the secret key used in production secret!
+SECRET_KEY="django-insecure-)48*nollyf6s&)sxw1e1#l50!onqjrq^48s5^eqr3x8z+6l%7o"
+
+# SECURITY WARNING: don't run with debug turned on in production!
+DEBUG=True
+
+ALLOWED_HOSTS = "localhost 127.0.0.1 [::1]"

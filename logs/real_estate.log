@@ -120,3 +120,5 @@
 2025-03-14 17:31:45,570 django.utils.autoreload INFO     Watching for file changes with StatReloader
 2025-03-14 17:31:48,054 django.utils.autoreload INFO     C:\Users\Soberr\Documents\Chat application\apps\ratings\admin.py changed, reloading.
 2025-03-14 17:31:50,455 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-14 17:36:17,385 django.utils.autoreload INFO     Watching for file changes with StatReloader
+2025-03-14 17:39:15,244 django.utils.autoreload INFO     Watching for file changes with StatReloader

@@ -1,6 +1,7 @@
 # import environ
 
 from pathlib import Path
+from datetime import timedelta
 
 
 # env = environ.Env(DEBUG=(bool, False))
@@ -37,7 +38,13 @@ DJANGO_APPS = [
 
 SITE_ID = 1 
 
-THIRD_PARTY_APPS = ["rest_framework", "django_filters", "django_countries", "phonenumber_field",]
+THIRD_PARTY_APPS = ["rest_framework", 
+                    "django_filters",
+                     "django_countries", 
+                     "phonenumber_field",
+                     "djoser",
+                     "rest_framework_simplejwt",
+                    ]
 
 LOCAL_APPS = ["apps.common", "apps.profiles", "apps.ratings", "apps.users"]
 
@@ -126,6 +133,45 @@ MEDIA_ROOT = BASE_DIR / "mediafiles"
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "users.User"
+
+REST_FRAMEWORK = {
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+    )
+}
+
+
+SIMPLE_JWT = {
+    "AUTH_HEADER_TYPES": (
+        "Bearer",
+        "JWT",
+    ),
+    "ACCESS_TOKEN_LIFETIME": timedelta(minutes=120),
+    "REFRESH_TOKEN_LIFETIME": timedelta(days=1),
+    "SIGNING_KEY": "x)$t482ts*%ec)z!l)^87#_&_v9jb%udnzat9%d$sqq^4vse^w",
+    "AUTH_HEADER_NAME": "HTTP_AUTHORIZATION",
+    "AUTH_TOKEN_CLASSES": ("rest_framework_simplejwt.tokens.AccessToken",),
+}
+
+DJOSER = {
+    "LOGIN_FIELD": "email",
+    "USER_CREATE_PASSWORD_RETYPE": True,
+    "USERNAME_CHANGED_EMAIL_CONFIRMATION": True,
+    "PASSWORD_CHANGED_EMAIL_CONFIRMATION": True,
+    "SEND_CONFIRMATION_EMAIL": True,
+    "PASSWORD_RESET_CONFIRM_URL": "password/reset/confirm/{uid}/{token}",
+    "SET_PASSWORD_RETYPE": True,
+    "PASSWORD_RESET_CONFIRM_RETYPE": True,
+    "USERNAME_RESET_CONFIRM_URL": "email/reset/confirm/{uid}/{token}",
+    "ACTIVATION_URL": "activate/{uid}/{token}",
+    "SEND_ACTIVATION_EMAIL": True,
+    "SERIALIZERS": {
+        "user_create": "apps.users.serializers.CreateUserSerializer,",
+        "user": "apps.users.serializers.UserSerializer",
+        "current_user": "apps.users.serializers.UserSerializer",
+        "user_delete": "djoser.serializers.UserDeleteSerializer",
+    },
+}
 
 import logging
 import logging.config
